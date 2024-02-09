@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState, useTransition } from "react";
-import Image from "next/image";
 import TabButton from "./TabButton";
 import Slider from "./Slider";
+import Link from "next/link";
 
 const TAB_DATA = [
   {
@@ -44,9 +44,26 @@ const TAB_DATA = [
       </ul>
     ),
   },
+  {
+    title: "SocialMedia",
+    id: "socialmedia",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>
+          <Link href="https://github.com/Galang211">Github</Link>
+        </li>
+        <li>
+          <Link href="https://www.instagram.com/riarulhaq/">Instagram</Link>
+        </li>
+        <li>
+          <Link href="https://www.instagram.com/riarulhaq/">Linkedin</Link>
+        </li>
+      </ul>
+    ),
+  },
 ];
 
-const images = ["/images/about-image.png", "/images/about-image-1.png", "/images/about-image-2.png"];
+const images = ["/images/about-image.png", "/images/about-image-1.png", "/images/about-image-2.png", "/images/about-image-3.png"];
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -81,6 +98,10 @@ const AboutSection = () => {
             <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>
               {" "}
               Certifications{" "}
+            </TabButton>
+            <TabButton selectTab={() => handleTabChange("socialmedia")} active={tab === "socialmedia"}>
+              {" "}
+              SocialMedia{" "}
             </TabButton>
           </div>
           <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>

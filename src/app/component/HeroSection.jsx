@@ -13,7 +13,7 @@ const HeroSection = () => {
           <h1 className="text-white mb-4 text-2xl sm:text-3xl lg:text-5xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-900">Hello, I&apos;m </span>
             <br></br>
-            <TypeAnimation sequence={["Galang Riarulhaq", 2000, "Web Developer", 1000, "Mobile Developer", 2000, "UI/UX Designer", 2000]} wrapper="span" speed={50} repeat={Infinity} />
+            <TypeAnimation sequence={["Galang Riarulhaq", 2000, "Student", 2000, "Web Developer", 1000, "Mobile Developer", 2000]} wrapper="span" speed={50} repeat={Infinity} />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">I code just for fun & I love it </p>
           <div>
