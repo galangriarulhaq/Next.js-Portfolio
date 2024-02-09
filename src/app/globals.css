@@ -10,3 +10,12 @@ img {
 img:hover {
   scale: 102%;
 }
+
+li {
+  height: auto;
+  transition: 0.3s ease all;
+}
+
+li:hover {
+  scale: 102%;
+}
