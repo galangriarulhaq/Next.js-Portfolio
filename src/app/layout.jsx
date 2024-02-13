@@ -4,7 +4,7 @@ import "./globals.css";
 const merienda = Merienda({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio",
+  title: "Galang Riarulhaq",
   description: "Website Portfolio Galang Riarulhaq",
 };
 
