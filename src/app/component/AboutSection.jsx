@@ -99,10 +99,6 @@ const AboutSection = () => {
               {" "}
               Certifications{" "}
             </TabButton>
-            <TabButton selectTab={() => handleTabChange("socialmedia")} active={tab === "socialmedia"}>
-              {" "}
-              SocialMedia{" "}
-            </TabButton>
           </div>
           <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         </div>
