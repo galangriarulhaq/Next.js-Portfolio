@@ -19,12 +19,12 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-fuchsia-900 to-violet-950 hover:bg-slate-200 text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-fuchsia-900 to-violet-950 text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-gray-500"
             >
               Hire Me
             </Link>
             <Link href="/" className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-fuchsia-900 to-violet-950 text-white mt-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-              <span className="block bg-[#121212] rounded-full px-5 py-2">Download CV</span>
+              <span className="block bg-[#121212] rounded-full px-5 py-2 hover:text-gray-500">Download CV</span>
             </Link>
           </div>
         </motion.div>
