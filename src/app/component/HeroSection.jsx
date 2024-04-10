@@ -18,7 +18,7 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">I code just for fun & I love it </p>
           <div>
             <Link
-              href="/#contact"
+              href="/"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-fuchsia-900 to-violet-950 text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-gray-500"
             >
               Hire Me
@@ -30,7 +30,7 @@ const HeroSection = () => {
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className="col-span-4 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image src="" alt="hero image" className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" width={300} height={300} />
+            <Image src="" alt="hero image" className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" width={300} height={300} />
           </div>
         </motion.div>
       </div>
