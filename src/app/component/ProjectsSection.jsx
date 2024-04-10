@@ -7,7 +7,7 @@ import { projectsData } from "../libs/project";
 import Link from "next/link";
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState("Web");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">My Projects</h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
+        {/* <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} /> */}
         <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
         <ProjectTag onClick={handleTagChange} name="Mobile" isSelected={tag === "Mobile"} />
         <ProjectTag onClick={handleTagChange} name="Sertificate" isSelected={tag === "Sertificate"} />
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
           </motion.li>
         ))}
       </ul>
-      <Link href={""} className="flex justify-center items-center mt-8">
+      <Link href={"/allproject"} className="flex justify-center items-center mt-8">
         <button
           style={{ WebkitBoxReflect: "below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))" }}
           className="px-10 py-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-xl group-hover:shadow-2xl group-hover:shadow-red-600 shadow-red-600 uppercase font-serif tracking-widest relative overflow-hidden group text-transparent cursor-pointer z-10 after:absolute after:rounded-full after:bg-red-200 after:h-[85%] after:w-[95%] after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 hover:saturate-[1.15] active:saturate-[1.4]"
