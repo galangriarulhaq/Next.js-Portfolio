@@ -29,8 +29,8 @@ const HeroSection = () => {
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className="col-span-4 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image src="/me_.png" alt="hero image" className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" width={320} height={320} />
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative shadow-lg shadow-purple-800/50">
+            <Image src="/me_2.png" alt="hero image" className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 shadow-2xl shadow-purple-800/50" width={320} height={320} />
           </div>
         </motion.div>
       </div>
